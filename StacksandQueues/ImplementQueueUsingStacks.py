@@ -1,3 +1,6 @@
+# T(C) -  the expensive while self.in_stack: work doesn’t happen every time—it happens only when out_stack is empty, 
+# and each element can be moved from in_stack to out_stack only once per push. Over a long sequence of operations, the total work “spreads out,” giving amortized 
+# O (1), O(1) per operation.
 class MyQueue:
 
     def __init__(self):
