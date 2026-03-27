@@ -5,6 +5,8 @@
 #         self.left = left
 #         self.right = right
 # Time complexity is O(n)
+# This solution is O(n) because each node is visited exactly once in a single DFS traversal. At each node, I compute height and check balance in constant time. 
+# I also short-circuit early if an unbalanced subtree is found. This avoids the naive O(n²) approach where heights are recomputed repeatedly
 from typing import Tuple
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
