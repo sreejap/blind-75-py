@@ -6,6 +6,8 @@ class Solution:
 
         res = []
         for i in range (len(nums)):
+            if nums[i] > 0:
+                break
             if i==0 or nums[i] != nums[i-1]:
                 self.twoSumII (i,nums,res)
         return res
