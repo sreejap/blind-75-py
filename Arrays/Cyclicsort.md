@@ -5,3 +5,6 @@
 # For each element x in nums, if it is a positive integer between 1 and n, we place it at index nums[x - 1]. Elements smaller than 1 or larger than n will reside at indexes that do not have a corresponding value in nums.
 
 # Then, to determine the smallest positive integer, we iterate through nums, and return the first element that is not equal to its index plus one.
+
+
+# to do - https://leetcode.com/problems/first-missing-positive/editorial/
