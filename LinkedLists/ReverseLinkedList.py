@@ -12,7 +12,7 @@ class Solution:
         prev = None
         curr = head
         
-        while curr: # 1
+        while curr: # looping condition
             nxt = curr.next # none
             curr.next = prev # swap 5 - 4 -  3 - 2 - 1 - none
             prev = curr # 5
