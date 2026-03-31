@@ -7,7 +7,7 @@ class Solution:
                 res.append (list(curr)) # or res.append(curr[:])
             
             for n in nums:
-                if n in curr:
+                if n in curr: # check whether n exists in the list curr
                     continue
                 curr.append (n)
                 backtrack (curr)
