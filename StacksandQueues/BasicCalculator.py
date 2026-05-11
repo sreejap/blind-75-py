@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/basic-calculator/
+# https://www.youtube.com/watch?v=A3noAzWZ9f4&t=311s
 class Solution:
     def calculate(self, s: str) -> int:
         output, curr, sign, stack = 0, 0, 1, []
