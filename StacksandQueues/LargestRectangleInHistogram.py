@@ -274,9 +274,10 @@ class Solution:
         # Calculate maximum rectangle area
         # For each bar, the rectangle width is (right_boundary - left_boundary - 1)
         # and height is the bar's height
+        # If the nearest shorter bars are at indices: L = left_boundaries[i], R = right_boundaries[i], then bar i can extend horizontally from: L + 1 up to R - 1 (because at L and R the height is smaller, so the rectangle can’t include them)
+        # So the number of bars included (the width) is: [ (R - 1) - (L + 1) + 1 = R - L - 1 ]
         max_area = max(
-            height * (right_boundaries[i] - left_boundaries[i] - 1) 
-            for i, height in enumerate(heights)
+            height * (right_boundaries[i] - left_boundaries[i] - 1) for i, height in enumerate(heights)
         )
       
         return max_area
