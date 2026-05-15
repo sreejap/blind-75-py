@@ -1,5 +1,6 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
+        # pattern to remember - plot a graph and that helps in coding the solution
         # loop through the array and update min value if curr value is smaller than the min
         # if not, compute the profit and see if that is greater than the current max profit
         ## 7 1 5 3 6 4
